@@ -41,8 +41,8 @@ var quotes = [
 var counter = 0;
 
 
-/*var g = new Date()
-if (Date == Date("December 25 2020 00:00")){ */
+var g = new Date()
+if (Date == Date("December 25, 2020 02:00")){
 
   tweetIt2();
   setInterval(tweetIt2, 60000)
@@ -145,4 +145,4 @@ function tweetIt2(){
       
     }
   
-//}
+}
