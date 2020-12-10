@@ -45,7 +45,7 @@ var counter = 0;
 if (Date == Date("December 25 2020 00:00")){ */
 
   tweetIt2();
-  setInterval(tweetIt2, 3600000)
+  setInterval(tweetIt2, 60000)
 
 
 function tweetIt2(){
