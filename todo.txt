@@ -1,0 +1,4 @@
+things to do:
+
+fix counting system
+fix quotes
