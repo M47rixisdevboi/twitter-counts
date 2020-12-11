@@ -13,7 +13,7 @@ console.log(d3); // output:2020-12-27T00:00:00.000Z, 27
 
 
 tweetIt();
-setInterval(tweetIt, 900000)
+setInterval(tweetIt, 60000)
 
 function tweetIt(){
 var ts = Date.now();
