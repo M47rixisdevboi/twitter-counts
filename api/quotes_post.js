@@ -45,15 +45,19 @@ var d2 = new Date('2020-12-26');
 var counter = 0;
 
 
-if (dt >= d1 && dt < d2){
 
-  tweetIt2();
-  setInterval(tweetIt2, 3600000)
 
+
+
+tweetIt2()
+setInterval(tweetIt2, 60000)
 
 function tweetIt2(){
-    
+if (dt >= d1 && dt < d2){ 
+
     Swap()
+    setInterval(Swap, 3600000)
+
     function Swap(){  
       switch(counter){
          case 0:
@@ -132,10 +136,7 @@ function tweetIt2(){
   
   
       }
-      
-  }
- 
-  Q.post('statuses/update', { status: tweet }, tweeted);
+      Q.post('statuses/update', { status: tweet }, tweeted);
     
     function tweeted(err, data, response) {
         if (err) {
@@ -147,6 +148,10 @@ function tweetIt2(){
       };
       
     }
+      
+  }
+  else { return;}
+ 
   
 }
-else {return;}
+
