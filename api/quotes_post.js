@@ -37,12 +37,15 @@ var quotes = [
 ];
 
 
+var ts = Date.now();
+var dt = new Date(ts);
+var d1 = new Date('2020-12-25');
+var d2 = new Date('2020-12-26');
 
 var counter = 0;
 
 
-var g = new Date()
-if (Date == Date("December 25, 2020 02:00")){
+if (dt >= d1 && dt < d2){
 
   tweetIt2();
   setInterval(tweetIt2, 3600000)
@@ -146,3 +149,4 @@ function tweetIt2(){
     }
   
 }
+else {return;}
