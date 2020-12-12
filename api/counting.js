@@ -2,7 +2,7 @@ var config = require("./config.js");
 var Twit = require('twit');
 var TT = new Twit(config);
 
-
+var ts = Date.now();
 var d1 = new Date('2020-12-25');
 var d2 = new Date('2020-12-26');
 var d3 = new Date('2020-12-27');
@@ -16,7 +16,6 @@ tweetIt();
 setInterval(tweetIt, 60000)
 
 function tweetIt(){
-var ts = Date.now();
 var dt = new Date(ts);
 
 if (dt < d1) { 
