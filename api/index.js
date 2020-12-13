@@ -6,7 +6,7 @@ const { defaultCipherList, SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require('constant
 
 var Quotes = require('./quotes_post.js');
 var Text = require("./counting.js");
-//var Images = require("./images_post.js"); //currently developed
+var Images = require("./images_post.js"); //currently developed
 
 
 
