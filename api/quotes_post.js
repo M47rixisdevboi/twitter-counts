@@ -50,7 +50,7 @@ var counter = 0;
 
 
 tweetIt2()
-setInterval(tweetIt2, 60000)
+setInterval(tweetIt2, 6000)
 
 function tweetIt2(){
 if (dt >= d1 && dt < d2){ 
